@@ -1,0 +1,1138 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fav",
+				"favSwitchState"
+			],
+			[
+				"todos",
+				"todosbak"
+			],
+			[
+				"mySer",
+				"myService"
+			],
+			[
+				"nex",
+				"nextTrack"
+			],
+			[
+				"launch",
+				"launchPlayer"
+			],
+			[
+				"new",
+				"newtodos"
+			],
+			[
+				"seacr",
+				"searchText"
+			],
+			[
+				"searc",
+				"searchText"
+			],
+			[
+				"local",
+				"localList"
+			],
+			[
+				"p",
+				"parse"
+			],
+			[
+				"loca",
+				"localList"
+			],
+			[
+				"n",
+				"ng-click	AngularJS"
+			],
+			[
+				"bind",
+				"bindPlayer2"
+			],
+			[
+				"loadPla",
+				"loadPlayer2"
+			],
+			[
+				"playsom",
+				"playSomethingSC"
+			],
+			[
+				"bin",
+				"bindPlayer2"
+			],
+			[
+				"main",
+				"mainCtrl"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"Todo",
+				"TodoCtrl"
+			],
+			[
+				"ng",
+				"ng-controller	AngularJS"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ty",
+				"type=\"text"
+			],
+			[
+				"nowPla",
+				"nowPlaying"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"display",
+				"displayText"
+			],
+			[
+				"Tracks",
+				"TracksCtrl"
+			],
+			[
+				"widgt",
+				"widgetIframe"
+			],
+			[
+				"inset",
+				"inset"
+			],
+			[
+				"link",
+				"linknumber"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"widget",
+				"widgetIframe"
+			],
+			[
+				"frame",
+				"frame	Tag"
+			],
+			[
+				"sr",
+				"src=\"https"
+			],
+			[
+				"sc",
+				"scrollable"
+			],
+			[
+				"oe",
+				"overflow"
+			],
+			[
+				"offs",
+				"offset-3"
+			],
+			[
+				"offse",
+				"offset-3"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"width",
+				"width:442px"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"alert",
+				"alert(\"blah"
+			],
+			[
+				"o",
+				"outline"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"rounded",
+				"roundedOne"
+			],
+			[
+				"shuffle",
+				"shuffleToggle"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"in",
+				"inline"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3559,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/wamp/www/angular v0.8/index.html",
+			"settings":
+			{
+				"buffer_size": 5814,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 14591,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "self.playSomething = function (index) {\n		self.pausePlayers();\n		console.log(\"blah blahsdjkhdfkhadkfh\", self.newtodos().length)\n		//random switch + fav switch is true\n		if ($rootScope.randomSwitchState == true && $rootScope.favSwitchState == true){\n			//random switch + fav switch is true\n			if ($rootScope.favSwitchState == true) {\n				var x = Math.floor((Math.random() * newtodos().length));\n			} else {\n				var x = Math.floor((Math.random() * self.newtodos().length));\n				newtodos = self.newtodos();\n				console.log(\"self.newtodos.length\",newtodos, newtodos.length)\n			}\n			 //var x = Math.floor((Math.random() * length));\n			 console.log(\"randomSwitchState is true, playing next\",x)\n		} else {\n			var x = index+1;\n		}\n		if ($rootScope.favSwitchState == false){\n			nextTrack = todosbak;\n		} else {\n			nextTrack = self.newtodos();\n		}\n	    console.log(\"playing something\");\n	    console.log(\"nextTrack\",nextTrack, x)\n	    nextTrack2 = nextTrack[x];\n	    console.log(\"self.newtodos()[x]\",nextTrack2)\n	    self.launchPlayer(nextTrack2, x);\n    };",
+			"settings":
+			{
+				"buffer_size": 1047,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"settings":
+			{
+				"buffer_size": 4613,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/User/node.sublime-build",
+	"command_palette":
+	{
+		"height": 357.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/angular v0.8/index.html",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-mousemap",
+		"/C/wamp/www/MashMusic Angular foundation - get fav button working/css/bootstrap.css",
+		"/C/Users/ATLAS/Desktop/telegram mash music",
+		"/C/wamp/www/MashMusic Angular foundation/index.html",
+		"/C/wamp/www/angular startAgain/jukebox.js",
+		"/C/wamp/www/angular startAgain/jukebox.html",
+		"/C/wamp/www/MashMusic Angular foundation - get fav button working/main.js",
+		"/C/wamp/www/MashMusic Angular foundation - get fav button working/index.html",
+		"/C/wamp/www/media embed/YTplayer 2. 95/index.html",
+		"/C/wamp/www/MashMusic Angular foundation/main.js",
+		"/C/Users/ATLAS/Favorites/Links/PythonWin.lnk",
+		"/C/wamp/www/angular - Copy (3) - most complete/index.html",
+		"/C/wamp/www/angular - Copy (3) - most complete/main.js",
+		"/C/wamp/www/angular - Copy (3) - most complete/css/bootstrap.css",
+		"/C/wamp/www/MashMusic Angular foundation/css/main.css",
+		"/C/Users/ATLAS/Documents/GitHub/ryzzuh.github.io/index.html",
+		"/C/wamp/www/angular startAgain/index.html",
+		"/C/wamp/www/angular startAgain/main.js",
+		"/C/Users/ATLAS/Documents/GitHub/ryzzuh.github.io/main.js",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/User/node.sublime-build",
+		"/C/wamp/www/angular startAgain/bower.json",
+		"/C/Users/ATLAS/bower_components/angular/angular.js",
+		"/C/wamp/www/angular -lsit binding data test/index.html",
+		"/C/wamp/www/angular -lsit binding data test/main.js",
+		"/C/wamp/www/angular hello world/index.html",
+		"/C/wamp/www/angular v0.8/main.js",
+		"/C/wamp/www/angular - Copy (2) - filter test/main.js",
+		"/C/wamp/www/angular - Copy (2) - filter test/index.html",
+		"/C/wamp/www/angular - test service - backup/main.js",
+		"/C/wamp/www/angular - test service - backup/index.html",
+		"/C/wamp/www/angular - test service working/index.html",
+		"/C/wamp/www/angular - test service working/main.js",
+		"/C/wamp/www/angular - test service/index.html",
+		"/C/wamp/www/angular - test service/main.js",
+		"/C/wamp/www/angular - Copy (3) - Copy/index.html",
+		"/C/wamp/www/angular - Copy (3) - Copy/main.js",
+		"/C/wamp/www/angular/index.html",
+		"/C/wamp/www/angular - Copy (2)/css/bootstrap.css",
+		"/C/wamp/www/angular - Copy (2)/main.js",
+		"/C/wamp/www/angular - Copy (2)/index.html",
+		"/C/wamp/www/angular - Copy - Copy/index.html",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/wamp/www/angular - Copy (2)/data.json",
+		"/C/wamp/www/angular - Copy - Copy/main.js",
+		"/C/wamp/www/angular/main.js",
+		"/C/wamp/www/angular - Copy/karma.conf.js",
+		"/C/wamp/www/angular - Copy/simpleSpec.js",
+		"/C/wamp/www/angular - Copy/controllerSpec.js",
+		"/C/wamp/www/angular - Copy/controller.js",
+		"/C/wamp/www/angular - Copy/main.js",
+		"/C/wamp/www/angular - Copy/index.html",
+		"/C/wamp/www/angular/css/bootstrap.css",
+		"/C/wamp/www/angular/data.json",
+		"/C/wamp/www/angular - Copy/data.json",
+		"/C/Users/ATLAS/workspace/Mashmusic/records/sanitized/facebookdata.json",
+		"/C/Users/ATLAS/workspace/Mashmusic/records/sanitized/final.json",
+		"/C/Users/ATLAS/workspace/Facebook JSON parser v2/test123.json",
+		"/C/wamp/www/media embed/YTplayer/index.html",
+		"/C/wamp/www/YTplayer/index.html",
+		"/C/wamp/www/bootstrap-3.3.1-dist/dist/css/bootstrap.css",
+		"/C/wamp/www/bootstrap-3.3.1-dist/dist/css/bootstrap.min.css",
+		"/C/wamp/www/media embed/bootstrap-3.3.1-dist/index.html",
+		"/C/wamp/www/bootstrap-3.3.1-dist/index.html",
+		"/C/wamp/www/YT 3.0/index.html",
+		"/C/wamp/www/Bootstrap/bootstrap-3.3.1-dist/dist/css/bootstrap.css",
+		"/C/wamp/www/media embed/YTplayer/css/main.css",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Origami/Default (Windows).sublime-keymap",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Origami/Origami.sublime-settings",
+		"/C/wamp/www/media embed/YTplayer/img/nextButton.svg",
+		"/C/wamp/www/media embed/YTplayer/img/pauseButton.svg",
+		"/C/wamp/www/media embed/YTplayer/img/previousButton.svg",
+		"/C/wamp/www/media embed/YTplayer/img/playButton.svg",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/wamp/www/media embed/YTplayer/img/playAllButton.svg",
+		"/E/-=Bak Nov 2014/Documents/AutoHotkey.ahk",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/wamp/www/media embed/YTplayer/img/shuffleButton.svg",
+		"/C/wamp/www/index.php",
+		"/C/wamp/www/YTplayer/404.html",
+		"/C/wamp/www/YTplayer/blah.html",
+		"/C/wamp/www/YTplayer/css/main.css",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/ATLAS/Desktop/yeh.html",
+		"/C/wamp/bin/apache/apache2.4.9/conf/extra/httpd-vhosts.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Theme - Default/Default.sublime-theme",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/Theme - Brogrammer/Brogrammer.sublime-theme",
+		"/C/Users/ATLAS/Desktop/test.py",
+		"/C/Users/ATLAS/Desktop/1+2 4",
+		"/C/Users/ATLAS/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"playedIds",
+			"history.playedIds",
+			"lastpla",
+			"loghist",
+			"myser",
+			"console.lo",
+			"favlis",
+			"logse",
+			"logser",
+			"newtodos",
+			"history",
+			"playedids",
+			"clear",
+			"fav",
+			"history",
+			"addHistory",
+			"addHistor",
+			"addhistor",
+			"blah",
+			"todosbak",
+			"newtodos",
+			"myservice.new",
+			"favSwitcher",
+			"randomSwitcher",
+			"{\n",
+			"playsome",
+			"random",
+			"todosbak",
+			"$rootScope.randomSwitchState",
+			"favSwitchState",
+			"randomSwitchState",
+			"randomSwitcher",
+			"randomSwitcher\nrandomSwitcher",
+			"randomSwitcher",
+			"randomSwitchState",
+			"randomSwitcher",
+			"launch",
+			"nowpla",
+			"newtodos",
+			"$rootScope.favSwitchState",
+			"newtodos",
+			"nowplaying",
+			"favswitcher",
+			"favSwitchState",
+			"favSwitcher",
+			"newtodos",
+			"launch",
+			"nowpla",
+			"playne",
+			"playnw",
+			"playsomething",
+			"playSomething",
+			"nowplaying",
+			"newtodo",
+			"newto",
+			"launchplayerSC",
+			"playSomething",
+			"random",
+			"randomSwitcher",
+			"random",
+			"favSwitcher",
+			"history",
+			"#f5f5f5",
+			"web",
+			"f5f5f5",
+			"#F5F5F5",
+			"fav switched",
+			"\"fav switched",
+			"testshi",
+			"fap2",
+			"filter",
+			"hide",
+			"sound",
+			"soundclou",
+			"state",
+			"playersta",
+			"onyou",
+			"fin",
+			"red",
+			"pause",
+			"stop",
+			"logFavourite",
+			"local",
+			"player",
+			"button",
+			"css",
+			"launchPlayerSC",
+			"bindPlayer2",
+			".load",
+			"bind",
+			"player",
+			");\n",
+			"player =",
+			"playNext",
+			"settim",
+			"launchPlayerSC",
+			"title",
+			"soundcloud",
+			"();},",
+			"load",
+			".play",
+			"if ",
+			"launch",
+			"loadPlayer2",
+			"loadpl",
+			"launchplayer",
+			"bindPlayer2",
+			"SC",
+			"wind",
+			"bindpla",
+			"SC",
+			"widget",
+			"bindPlayer",
+			"bindpla",
+			"number",
+			"launch",
+			"onyou",
+			"getyou",
+			"bindplay",
+			"playerId",
+			"loadPlayer",
+			"createPlayer",
+			"elementId",
+			"$rootScope",
+			"VideosService",
+			"upcoming",
+			"service",
+			"service."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#fff",
+			"",
+			" ",
+			"'",
+			"",
+			"= \"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 104.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/wamp/www/angular v0.8/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2133,
+								2194
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 844.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8462,
+								8462
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5312.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4613,
+								4613
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp\\www\\media embed\\YTplayer\\css\\main.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 164.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

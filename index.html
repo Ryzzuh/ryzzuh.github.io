@@ -1,0 +1,85 @@
+<!-- File: chapter5/log-example.html -->
+<html ng-app="notesApp" scroll id="page" ng-class="{min:boolChangeClass}">
+<head>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<script src="bower_components/moment/moment.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div ng-controller="MainCtrl as mainCtrl">
+
+
+	 	<div ng-model="nowPlaying" class="ng-show" ng-hide="nowPlaying.source == 'SC' || nowPlaying.source == 'YT'" style= "background-color:white"><img src= "images/mash.jpg"></div>
+	 
+		<!-- LOAD SCFRAME  !!! -->
+	     <iframe id="sc-widget" ng-model="nowPlaying" class="ng-hide" ng-show="nowPlaying.source == 'SC'" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/users/1539950/favoritesss" scrolling="no" frameborder="no" width = "55%">
+	     </iframe>
+	     <!-- LOAD SCFRAME  !!! -->
+		<div ng-model="nowPlaying" ng-show="nowPlaying.source == 'YT'" >
+	 		<div id="player">Youtube Player</div>
+	 	</div>
+	 	<section style= "background-color:white;border-bottom:1px solid black">
+	 	<div style= "background-color:white;padding:5px">
+
+		<img src= "images/previousfinal-1-01.png" title= "previous" ng-click ="mainCtrl.playPrevious()" width="50px">
+		<img src= "images/playfinal-1-01.png" title= "play" ng-click ="mainCtrl.playPlayers()" width="50px">
+		<img src= "images/pausefinal-1-01.png" title= "pause" ng-click ="mainCtrl.pausePlayers()" width="50px">
+		<img src= "images/nextfinal-1-01.png" title= "next" ng-click ="mainCtrl.playNext()" width="50px">
+		<img src= "images/stopfinal-1-01.png" title= "stop" ng-click ="mainCtrl.stopPlayers()" width="50px">
+
+		<img src= "{{randomSwitchState == true ? 'images/randomfinalchecked-1-01.png' : 'images/randomfinal-1-01.png' }}" title= "random" ng-click ="mainCtrl.randomSwitcher()" width="50px">
+
+	 	<img ng-src= "{{favSwitchState == true ? 'images/heartfinalchecked-1-01.png' : 'images/heartfinal-1-01.png' }}" title= "favourites" ng-click="mainCtrl.newtodos()" width="50px">
+		<img src= "images/search6.svg" width="15px">
+		 <input type="text" ng-model="searchText">   {{data.length}} tracks
+	 <!--button ng-click="mainCtrl.playRandom()">Surprise Me!</button-->
+	 <!--button ng-click="mainCtrl.logHistory()">logHistory</button-->
+	 <!--button ng-click="mainCtrl.logSearch()">logSearch</button-->
+	 <!--button ng-click="mainCtrl.logMoment()">logMoment</button-->
+
+	</div>
+	<!--div class="panel-title btn btn-default" style= "margin-left:5px;background-color:#9DDEFA"><h5>NowShowing</h5></div-->
+		<div class="panel-title btn btn-default" 
+			ng-model="nowPlaying" 
+			style= "margin-left:5px;background-color:#9DDEFA"
+			ng-click="mainCtrl.logNowPlaying()">
+
+		<h5>{{nowPlaying.title}} - {{nowPlaying.duration}} seconds</h5></div>
+		<div class="panel-title btn btn-default" style= "margin-left:5px;background-color:#9DDEFA"><h5>share</h5></div>
+	 	</section>
+
+	    <div ng-repeat="todo in data = (todos | filter:searchText)"
+	    	 id="{{todo.link}}"
+	    	 ng-click ="clicked($event.target.innerText)">
+
+	    <div class="panel panel-info">
+		    	<img ng-src= "{{fap[todo.Id] == 'true' ? 'images/heartfinalchecked-1-01.png' : 'images/heartfinal-1-01.png' }}" id= "{{todo.Id}}" width="30px" ng-click="mainCtrl.logFavourite($index)">
+
+		      	<div 	id= "tracklist" 
+				      	class= "panel-title btn btn-default" 
+				      	data= "{{todo}}"
+				      	ng-click="mainCtrl.clicked($index);
+				      	mainCtrl.clearHistory();
+				      	mainCtrl.addHistory($index)" 
+				      	ng-mouseover="myStyle={color:'black', cursor:'pointer'}" 
+				      	ng-Mouseleave="myStyle={color:'black'}" 
+				      	ng-style="myStyle">
+				
+		      		{{todo.title}} - 
+		      	<em>{{todo.from}}</em>
+		      </div>
+	      </div>
+	    </div>
+ 	</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js">
+	</script>
+
+
+<script src="main.js">
+	</script>
+</body>
+</html>
