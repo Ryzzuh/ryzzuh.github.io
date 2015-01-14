@@ -509,7 +509,7 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 app.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind("scroll", function() {
-             if (this.pageYOffset >= 153) {
+             if (this.pageYOffset >= 150) {
                  scope.boolChangeClass = true;
                  console.log('Scrolled below header.');
              } else {
