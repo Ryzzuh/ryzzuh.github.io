@@ -123,6 +123,8 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 	                //
 	                defer.resolve(data);
 	                todosbak = data;
+			console.log("data");
+			console.log(todosbak)
 	                    })
 	            .error(function(data, status, headers, config) {
 	                // called asynchronously if an error occurs
