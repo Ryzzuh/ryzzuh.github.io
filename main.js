@@ -382,7 +382,7 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 	 	$rootScope.nowPlaying.index = index;
 	 	console.log('$rootScope.nowPlaying.Id yes',$rootScope.nowPlaying.Id);
 		console.log("track: ");
-		console.log(track);	
+		console.log(track.id);	
 		console.log("index: ", index)
 	 	//self.addHistory(track);
 
