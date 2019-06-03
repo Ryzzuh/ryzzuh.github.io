@@ -380,7 +380,7 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 		console.log("launchPlayer called");
 	 	$rootScope.nowPlaying = track;
 	 	$rootScope.nowPlaying.index = index;
-	 	console.log('$rootScope.nowPlaying.Id yes',$rootScope.nowPlaying.Id);
+	 	console.log('$rootScope.nowPlaying.Id yes',$rootScope.nowPlaying.id);
 		console.log("track: ");
 		console.log(track.id);	
 		console.log("index: ", index)
@@ -388,23 +388,21 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 
 	 	self.pausePlayers();
 		if (track.source == "YT"){
-		    youtube.player.loadVideoById(track.Id);
-		    youtube.videoId = track.id;
-		    youtube.videoTitle = track.title;
-		    return youtube;
+			youtube.player.loadVideoById(track.id);
+			youtube.videoId = track.id;
+			youtube.videoTitle = track.title;
+			return youtube;
 		}
 		else if (track.source = "SC"){
 			console.log("launching SC", track.id, track.title);
-		    widget.load(track.link, {auto_play:true});
-		    youtube.videoTitle = track.title;
+			widget.load(track.link, {auto_play:true});
+			youtube.videoTitle = track.title;
 		}
 	  }
 
 	self.getYoutube = function () {
-	    return youtube;
+		return youtube;
 	  };
-
-
 	// self.launchPlayerSC = function (id, title) {
 	// 	console.log("launching SC", id, title);
 	//     widget.load(id, {auto_play:true});
