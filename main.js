@@ -395,7 +395,7 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 		}
 		else if (track.source = "SC"){
 			console.log("launching SC", track.id, track.title);
-			widget.load(track.link, {auto_play:true});
+			widget.load("https://api.soundcloud.com/tracks/"+track.id, {auto_play:true});
 			youtube.videoTitle = track.title;
 		}
 	  }
