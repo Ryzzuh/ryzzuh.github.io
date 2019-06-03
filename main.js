@@ -377,10 +377,11 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
   //   };
 
 	self.launchPlayer = function (track, index) {
+		console.log("launchPlayer called");
 	 	$rootScope.nowPlaying = track;
 	 	$rootScope.nowPlaying.index = index;
 	 	console.log('$rootScope.nowPlaying.Id yes',$rootScope.nowPlaying.Id);
-		console.log("track: ")
+		console.log("track: ");
 		console.log(track);	
 		console.log("index: ", index)
 	 	//self.addHistory(track);
