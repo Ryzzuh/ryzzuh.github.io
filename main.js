@@ -379,7 +379,9 @@ app.service('myService', function ($window, $rootScope, $log, $http, $q){
 	self.launchPlayer = function (track, index) {
 	 	$rootScope.nowPlaying = track;
 	 	$rootScope.nowPlaying.index = index;
-	 	console.log('$rootScope.nowPlaying.Id yes',$rootScope.nowPlaying.Id)
+	 	console.log('$rootScope.nowPlaying.Id yes',$rootScope.nowPlaying.Id);
+		console.log("track: ", track)
+		console.log("index: ", index)
 	 	//self.addHistory(track);
 
 	 	self.pausePlayers();
